@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex card</title>
+    <style>
+     .main{
+        display: flex;
+        gap: 20px;
+     }
+
+     .one, .two, .three{
+        background-color: rgb(220, 210, 210);
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+     }
+
+     img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+     }
+
+     button{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(17, 246, 147);
+        color: white;
+        cursor: pointer;
+     }
+
+     /* HiFi-style map container */
+     .map-section {
+        margin-top: 40px;
+        background: #f5f5f5;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+     }
+
+     .map-section h2 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-family: Arial, sans-serif;
+     }
+
+     .map-box {
+        width: 100%;
+        height: 350px;
+        border-radius: 15px;
+        overflow: hidden;
+     }
+    </style>
+</head>
+<body>
+
+    <h2>Flexbox Cards Task</h2>
+
+    <div class="main">
+        <div class="one">
+            <img src="mn123.jpg" alt="Card 1 Image">
+            <h2>Card 1</h2>
+            <h5>This is a simple card using flex</h5>
+            <button>View</button>
+        </div>
+
+        <div class="two">
+            <img src="mn123.jpg" alt="Card 2 Image">
+            <h2>Card 2</h2>
+            <h5>Practice creating layout using Flexbox.</h5>
+            <button>View</button>
+        </div>
+
+        <div class="three">
+            <img src="mn123.jpg" alt="Card 3 Image">
+            <h2>Card 3</h2>
+            <h5>Try adding more cards or changing the styles</h5>
+            <button>View</button>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <h2>Our Location</h2>
+
+        <div class="map-box">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019529889604!2d-122.41941548468179!3d37.7749292797596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5be0d149%3A0xdaa3f7a1f351a1c1!2sSan%20Francisco!5e0!3m2!1sen!2sus!4v1700000000000"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
