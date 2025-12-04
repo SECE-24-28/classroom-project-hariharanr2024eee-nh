@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Example</title>
+    <style>
+        @keyframes box1{
+            from{
+                transform: translateY(0);
+            }
+            to{
+                transform: translateY(300px);
+            }
+        }
+        @keyframes box2{
+            30%{
+                height: fit-content;
+                width: fit-content;
+                background-color: aquamarine; 
+                border-radius: 20px; 
+                text-align: center;
+            }
+            70%{
+                height: 100px;
+                width: 200px;
+                background-color: rgb(11, 129, 17); 
+                border-radius: 20px; 
+                text-align: center;
+            }
+            100%{
+                height: 300px;
+                width: 300px;
+                background-color: rgb(141, 255, 104); 
+                border-radius: 20px; 
+                text-align: center;
+            }
+        }
+        @keyframes box3{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .Box1{
+            background-color: rgb(255, 51, 51);
+            height: 100px;
+            width: 100px; 
+            border-radius: 20px;
+            text-align: center;
+            animation-name: box1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .Box2{
+            background-color: rgb(26, 255, 26);
+            height: 100px;
+            width: 100px; 
+            border-radius: 20px;
+            text-align: center;
+            animation-name: box2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .Box3{
+            background-color: rgb(255, 255, 75);
+            height: 100px;
+            width: 100px; 
+            text-align: center;
+            border-radius: 20px;
+            animation-name: box3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .Box4{
+            background-color: rgb(255, 163, 33);
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            border-radius: 20px;
+            animation-name: rotate;
+            animation: rotate 1s infinite;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="Box1">Box1</div><br>
+    <div class="Box2">Box2</div><br>
+    <div class="Box3"><p>Box3</p></div><br><br><br><br>
+    <div class="Box4"><p>Box4</p></div><br>
+    
+</body>
+</html>
