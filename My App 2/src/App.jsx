@@ -13,31 +13,31 @@ export default function App() {
     id: 2,
     name: "Smart Watch",
     price: "$79.99",
-    img: "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=800&q=80"
+    img: "https://images.unsplash.com/photo-1637160151663-a410315e4e75?q=80&w=687&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
     name: "Nike Sneakers",
     price: "$99.99",
-    img: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80"
+    img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1170&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 4,
     name: "Gaming Mouse",
     price: "$29.99",
-    img: "https://images.unsplash.com/photo-1587202372775-a5adcbf03b3b?auto=format&fit=crop&w=800&q=80"
+    img: "https://images.unsplash.com/photo-1632160871990-be30194885aa?q=80&w=765&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 5,
     name: "Sunglasses",
     price: "$19.99",
-    img: "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80"
+    img: "https://images.unsplash.com/photo-1732139637220-15346842a9fd?q=80&w=736&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 6,
     name: "Backpack",
     price: "$34.99",
-    img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+    img: "https://images.unsplash.com/photo-1642375352634-ad952121fdb3?q=80&w=687&auto=format&fit=crop&w=800&q=80"
   }
 ];
 
