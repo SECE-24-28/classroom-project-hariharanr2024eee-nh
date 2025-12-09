@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        form{
+            
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            background-color: rgb(240, 240, 240);
+        } 
+        input{
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing:border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        } 
+        button{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            height: 30px;
+            width: 80px; 
+            align-items: center; 
+            border-radius: 16px; 
+            text-align: center; 
+        } 
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 10px;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        } 
+    </style>
+</head>
+<body> 
+    <form>
+    <label>Name:</label> 
+    <br>
+    <input type="text" required placeholder="Enter your name"> 
+    <br>
+    <label>Email:</label> 
+    <br>
+    <input type="email" required placeholder="Enter your email"> 
+    <br>
+    <label>Password:</label> 
+    <br>
+    <input type="password" required placeholder="Enter your password"> 
+    <br> 
+    <br>
+    <button type="submit">Submit</button>  
+    </form> 
+    <box1 class="box1"></box1>
+</body>
+</html> 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Example</title>
+    <style>
+        @keyframes box1{
+            from{
+                transform: translateY(0);
+            }
+            to{
+                transform: translateY(300px);
+            }
+        }
+        @keyframes box2{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+        @keyframes box3{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+        .Box1{
+            background-color: rgb(255, 104, 104);
+            height: 100px;
+            width: 100px; 
+            border-radius: 20px;
+            animation-name: box1; 
+            text-align: center;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        .Box2{
+            background-color: rgb(69, 255, 69);
+            height: 100px;
+            width: 100px; 
+            border-radius: 20px;
+            animation-name: box2; 
+            text-align: center;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .Box3{
+            background-color: rgb(255, 255, 100);
+            height: 100px;
+            width: 100px; 
+            border-radius: 20px;
+            animation-name: box3; 
+            text-align: center;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+            
+    </style>
+</head>
+<body>
+     <div class="main">
+    <div class="Box1">Box1</div><br>
+    <div class="Box2">Box2</div><br>
+    <div class="Box3"><p>Box3</p></div><br>
+       </div>
+</body>
+</html>

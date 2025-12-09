@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <h1><b>Simple Password Generator</b></h1> 
+    
+    <div class="card"> 
+              <div class="row">
+            <input id="upper" type="checkbox"/>
+            <label>Include A-Z(Uppercase)</label> 
+        </div> 
+
+
+
+        <div class="row">
+            <input id="lower" type="checkbox"/>
+            <label>Include a-z(Lowercase)</label> 
+        </div> 
+
+                <div class="row">
+            <input id="numbers" type="checkbox"/>
+            <label>Include 0-9(Numbers)</label>  
+        </div> 
+
+                        <div class="row">
+            <input id="symbols" type="checkbox"/>
+            <label>Include @-#(Symbols)</label>  
+        </div> 
+        
+            <div class="row">
+             <label>Length:</label>  
+            <input id="length" type="number"/></input> 
+            </div>
+       <div class="row">
+        <input id="output" class="result" placeholder="Your password will appear"/> 
+       </div>
+       <div class="controls"> 
+        <button id="generate">Generate</button> 
+        <button id="clear">Clear</button>
+       </div>
+    </div> 
+
+   <script>
+    const upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
+    const lower = 'abcdefghijklmnopqrstuvwxyz';
+    const numbers='1234567890';
+    const symbols='!@#$%&*'; 
+
+    function generate(){
+        const parts=[];
+        if(document.getElementById("upper").checked) {
+            parts.push(upper);
+        }
+        if(document.getElementById("lower").checked){
+            parts.push(lower);
+        }
+        if(document.getElementById("numbers").checked){
+            parts.push(numbers);
+        } 
+        if(document.getElementById("symbols").checked){
+            parts.push(symbols); 
+            
+        } 
+        const length=parseInt(document.getElementById("length").value);
+
+        if(parts.length===0){
+            alert("Please select at least one character type.");
+            return;
+        }
+        const charset=parts.join('');
+        let out='';
+        function randomIndex(max){
+            return Math.floor(Math.random()*max);
+        }
+        for(let i=0;i<length;i++){
+           
+            out+=charset[ randomIndex(charset.length)];
+        }   
+        document.getElementById("output").value=out;
+    }
+     
+    
+    document.getElementById("generate").addEventListener('click',generate);
+    document.getElementById("clear").addEventListener('click',()=>{
+        document.getElementById("output").value='';   
+
+    });
+
+
+
+
+
+   </script>
+
+</body>
+</html>
